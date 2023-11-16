@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Moedas</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="moedas.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <h3><a href="index.html" class="navegacao__link">Conversor Interestelar</a></h3>
+            <nav class="navegacao">
+                <a href="index.html" class="navegacao__link">Home</a>
+                <a href="moedas.html" class="navegacao__link">Moedas</a>
+                <a href="#" class="navegacao__link">Temperaturas</a>
+                <a href="#" class="navegacao__link">Anos-luz</a>
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="container__alinhamento">
+                <h2 class="container__titulo">Conversor de Moedas</h2>
+                <p class="container__texto">
+                        Selecione as moedas e digite o valor desejado. <br> Clique no botão 'Converter' e veja o resultado!
+                </p>
+                <label for="moedaOrigem" class="container__texto__opcoes">Moeda Atual:</label>
+                <select id="moedaOrigem" class="container__opcoes">
+                    <option value="libra">Libra</option>
+                    <option value="real">Real</option>
+                    <option value="dolar">Dólar</option>
+                    <option value="euro">Euro</option>
+                    <option value="iene">Iene</option>
+                </select>
+
+                <input type="number" id="valor" placeholder="Digite o valor">
+
+                <label for="moedaDestino" class="container__texto__opcoes">Moeda Desejada:</label>
+                <select id="moedaDestino" class="container__opcoes">
+                    <option value="libra">Libra</option>
+                    <option value="real">Real</option>
+                    <option value="dolar">Dólar</option>
+                    <option value="euro">Euro</option>
+                    <option value="iene">Iene</option>
+                </select>
+
+                <button onclick="converterMoeda()" class="botao">Converter</button>
+        </div>
+            <p id="resultado"></p>
+        </div>
+        
+        <script src="conversorMoedas.js"></script>
+    </body>
+</html>
