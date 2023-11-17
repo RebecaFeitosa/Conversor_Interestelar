@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temperatura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="temperatura.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <h3><a href="index.html" class="navegacao__link__titulo">Conversor Interestelar</a></h3>
+            <nav class="navegacao">
+                <a href="index.html" class="navegacao__link">Home</a>
+                <a href="moedas.html" class="navegacao__link">Moedas</a>
+                <a href="temperatura.html" class="navegacao__link">Temperaturas</a>
+                <a href="#" class="navegacao__link">Anos-luz</a>
+            </nav>
+        </header>
+
+        <div class="container">
+            <h2 class="container__titulo">Conversor de Temperaturas</h2>
+            <p class="container__texto">
+                Selecione as temperaturas e digite o valor desejado. <br> Clique no botão 'Converter' e veja o resultado!
+            </p>
+            <label for="tempOrigem" class="container__texto__opcoes">Temperatura Atual:</label>
+            <select id="tempOrigem" class="container__opcoes">
+                <option value="celsius">°C</option>
+                <option value="fahrenheit">°F</option>
+                <option value="kelvin">°K</option>
+            </select>
+
+            <input type="number" id="valor" placeholder="Digite o valor">
+
+            <label for="tempDestino" class="container__texto__opcoes">Temperatura Desejada:</label>
+            <select id="tempDestino" class="container__opcoes">
+                <option value="celsius">°C</option>
+                <option value="fahrenheit">°F</option>
+                <option value="kelvin">°K</option>
+            </select>
+
+            <button onclick="converterTemp()" class="botao">Converter</button>
+            <p id="resultado"></p>
+        </div>
+        
+        <script src="temperatura.js"></script>
+    </body>
+</html>
