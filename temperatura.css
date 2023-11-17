@@ -1,0 +1,119 @@
+:root {
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --fonte-principal: 'Comfortaa';
+    --azul: rgb(23, 23, 175);
+    --laranja: rgb(235, 97, 5);
+    --verde: rgb(71, 179, 21);
+}
+
+body {
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+    font-weight: 300;
+    background-image: url(img/temperatura.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat; 
+    height: 100vh;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--branco);
+    padding: 1em;
+}
+
+.navegacao {
+    margin-left: 25%;
+}
+
+.navegacao__link__titulo {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--azul);
+    padding: 0.3em;
+    text-decoration: none;
+}
+
+.navegacao__link {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--laranja);
+    padding: 0.3em;
+    text-decoration: none;
+}
+
+.navegacao__link:hover {
+    color: var(--branco);
+    background-color: var(--laranja);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__titulo {
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--branco);
+    margin: 20px 10px;
+}
+
+
+.container__texto {
+    font-size: 18px;
+    margin: 20px 0 40px 0;
+}
+
+.container__texto__opcoes {
+    margin: 10px 0 10px;
+    font-weight: 400;
+}
+
+.container__opcoes {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid var(--preto);
+    border-radius: 10px;
+    width: 35%;
+    margin-bottom: 30px;
+}
+
+#valor {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid var(--preto);
+    border-radius: 10px;
+    width: 33%;
+    margin: 30px 0 40px 0;
+}
+
+.botao {
+    font-size: 16px;
+    background-color: var(--verde);
+    border-radius: 10px;
+    color: var(--branco);
+    padding: 0.5em 1em;
+    margin: 10px 0 25px 0;
+}
+
+.botao:hover {
+    background-color: var(--preto);
+    color: var(--verde);
+}
+
+#resultado {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 20px 0 30px 0;
+    color: var(--preto);
+    background-color: var(--branco);
+    border-radius: 20px;
+    padding: 0.8em;
+}
