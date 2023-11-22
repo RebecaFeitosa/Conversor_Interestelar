@@ -14,35 +14,37 @@
         <header class="cabecalho">
             <h3><a href="index.html" class="navegacao__link__titulo">Conversor Interestelar</a></h3>
             <nav class="navegacao">
-                <a href="index.html" class="navegacao__link">Home</a>
                 <a href="moedas.html" class="navegacao__link">Moedas</a>
                 <a href="temperatura.html" class="navegacao__link">Temperaturas</a>
-                <a href="#" class="navegacao__link">Anos-luz</a>
+                <a href="bitcoin.html" class="navegacao__link">Bitcoin</a>
+                <a href="anosluz.html" class="navegacao__link">Anos-Luz</a>
             </nav>
         </header>
 
         <div class="container">
-            <h2 class="container__titulo">Conversor de Temperaturas</h2>
-            <p class="container__texto">
-                Selecione as temperaturas e digite o valor desejado. <br> Clique no botão 'Converter' e veja o resultado!
-            </p>
-            <label for="tempOrigem" class="container__texto__opcoes">Temperatura Atual:</label>
-            <select id="tempOrigem" class="container__opcoes">
-                <option value="celsius">°C</option>
-                <option value="fahrenheit">°F</option>
-                <option value="kelvin">°K</option>
-            </select>
+            <div class="container__alinhamento">
+                <h2 class="container__titulo">Conversor de Temperaturas</h2>
+                <p class="container__texto">
+                    Selecione as temperaturas e digite o valor desejado. <br> Clique no botão 'Converter' e veja o resultado!
+                </p>
+                <label for="tempOrigem" class="container__texto__opcoes">Temperatura Atual:</label>
+                <select id="tempOrigem" class="container__opcoes">
+                    <option value="celsius">°C</option>
+                    <option value="fahrenheit">°F</option>
+                    <option value="kelvin">°K</option>
+                </select>
 
-            <input type="number" id="valor" placeholder="Digite o valor">
+                <input type="number" id="valor" placeholder="Digite o valor">
 
-            <label for="tempDestino" class="container__texto__opcoes">Temperatura Desejada:</label>
-            <select id="tempDestino" class="container__opcoes">
-                <option value="celsius">°C</option>
-                <option value="fahrenheit">°F</option>
-                <option value="kelvin">°K</option>
-            </select>
+                <label for="tempDestino" class="container__texto__opcoes">Temperatura Desejada:</label>
+                <select id="tempDestino" class="container__opcoes">
+                    <option value="celsius">°C</option>
+                    <option value="fahrenheit">°F</option>
+                    <option value="kelvin">°K</option>
+                </select>
 
-            <button onclick="converterTemp()" class="botao">Converter</button>
+                <button onclick="converterTemp()" class="botao">Converter</button>
+            </div>
             <p id="resultado"></p>
         </div>
         

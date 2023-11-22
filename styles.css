@@ -43,7 +43,7 @@ body {
     border: 1px solid var(--cinza);
     border-radius: 40px;
     background-color: var(--cinza);    
-    padding: 0.5em;
+    padding: 2em;
 }
 
 .container__texto{

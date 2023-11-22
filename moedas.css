@@ -1,46 +1,40 @@
 :root {
     --branco: #FFFFFF;
-    --preto: #000000;
     --fonte-principal: 'Comfortaa';
-    --marrom: #361a0b;
-    --cinza: #ebebeb;
-    --hover: #694d3d;
+    --azul-preto: #050D1B;
+    --cinza: #244b70;
+    --hover: #2E597A;
+    --azul: blue;
 }
 
 body {
     color: var(--branco);
     font-family: var(--fonte-principal);
     font-weight: 300;
-    background-image: url(img/moedas.jpg);
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat; 
-    height: 100vh;   
+    background-color: var(--cinza);
 }
 
 .cabecalho {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    background-color: var(--cinza);
+    position: relative;
     padding: 1em;
-}
-
-.navegacao {
-    margin-left: 25%;
 }
 
 .navegacao__link {
     font-weight: 700;
     font-size: 20px;
-    color: var(--marrom);
+    color: var(--branco);
     padding: 0.3em;
     text-decoration: none;
+    top: 100%;
+    width: 60vw;
 }
 
 .navegacao__link:hover {
     color: var(--branco);
-    background-color: var(--marrom);
+    background-color: var(--azul-preto);
 }
 
 .container {
@@ -53,8 +47,8 @@ body {
 .container__titulo {
     font-size: 60px;
     font-weight: 700;
-    color: var(--marrom);
-    margin: 20px 10px;
+    color: var(--branco);
+    margin: 20px 50px;
 }
 
 .container__alinhamento {
@@ -62,8 +56,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--marrom);
-    background-color: var(--cinza);
+    color: var(--branco);
+    background-color: var(--azul-preto);
     border-radius: 30px;
     margin-top: 100px;
 }
@@ -81,7 +75,7 @@ body {
 .container__opcoes {
     padding: 8px;
     font-size: 16px;
-    border: 1px solid var(--marrom);
+    border: 1px solid var(--azul-preto);
     border-radius: 10px;
     width: 35%;
     margin-bottom: 30px;
@@ -90,18 +84,20 @@ body {
 #valor {
     padding: 8px;
     font-size: 16px;
-    border: 1px solid var(--marrom);
+    border: 1px solid var(--azul-preto);
     border-radius: 10px;
     width: 32%;
     margin: 30px 0 40px 0;
 }
 
 .botao {
+    font-weight: 700;
     font-size: 16px;
-    background-color: var(--marrom);
+    background-color: var(--azul);
     color: var(--branco);
     padding: 0.5em 1em;
     margin: 10px 0 25px 0;
+    border-radius: 10px;
 }
 
 .botao:hover {
@@ -112,7 +108,7 @@ body {
     font-size: 25px;
     font-weight: 700;
     margin: 20px 0 30px 0;
-    color: var(--marrom);
+    color: var(--azul-preto);
     background-color: var(--branco);
     border-radius: 20px;
     padding: 0.8em;
